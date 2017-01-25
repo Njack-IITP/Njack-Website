@@ -3,6 +3,10 @@ html,body {
 	height:100%;
 }
 
+
+h1{
+  text-align: center;
+}
 .mainPage{
   min-height:98% ;
   height:98%;
