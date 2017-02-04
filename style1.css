@@ -1,12 +1,19 @@
-body{
+html,body {
 	font:Raleway,serif;
+	height:100%;
 }
 
+
+h1{
+  text-align: center;
+}
 .mainPage{
-  height:90vh ;
+  min-height:98% ;
+  height:98%;
   width:100%;
   display:block;
   margin:0;
+  padding-top:50px;
 
   background: #0099F7; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #0099F7 , #F11712); /* Chrome 10-25, Safari 5.1-6 */
@@ -14,7 +21,7 @@ body{
 }
 
 .intro {
-  height:90vh ;
+  height:90% ;
   width:100%;
   display:block;
   margin:0;
@@ -23,3 +30,16 @@ body{
   background: -webkit-linear-gradient(to left, #4DA0B0 , #D39D38); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #4DA0B0 , #D39D38); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+
+
+
+
+.fotr {
+  background:#333;
+  min-height:6%;
+  padding:5px;
+  color:white;
+  
+}
+
