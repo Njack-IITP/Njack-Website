@@ -21,9 +21,6 @@ body{
 	cursor:pointer;
 }
 
-.hidden{
-	display:none;
-}
 
 .description{
 	background-color:black;
@@ -32,4 +29,8 @@ body{
 	width:100%;
 	position:;
 	margin-top:80vh;;
+}
+
+#A_text,#WD_text,#C_text,#L_text{
+	display:none;
 }

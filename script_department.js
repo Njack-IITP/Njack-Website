@@ -1,46 +1,169 @@
 $(document).ready(function(){
 	
-	var flag=false;
+	var flag_android=false;
+	var flag_webdev=false;
+	var flag_coding=false;
+	var flag_linux=false;
+	var flag_atleastoneopen=false;
 	
 	$("#Android").click(function(){
-		$("#A_text").toggleClass("hidden");
-		$("#WD_text").addClass("hidden");
-		$("#C_text").addClass("hidden");
-		$("#L_text").addClass("hidden");
-		/*if(flag==false)
-	    {
-			$("#A_text").toggleClass("hidden");
-			$("html, body").animate({ scrollTop: 500 }, 800);
-			flag=true;}
+		
+		if(flag_webdev==true)
+		{
+			$("#WD_text").fadeOut(500,function(){});
+			flag_webdev=false;
+		}
+		
+		if(flag_coding==true)
+		{
+			$("#C_text").fadeOut(500);
+            flag_coding=false;			
+		}
+		
+		if(flag_linux==true)
+		{
+			$("#L_text").fadeOut(500);
+             flag_linux=false;			
+		}
+		
+		if(flag_android==false)
+	    {	
+	        $("#A_text").fadeIn(500);
+			
+			if(flag_atleastoneopen==false)
+			$("html, body").animate({ scrollTop: $("#A_text").offset().top }, 900);
+			
+			flag_android=true;
+			flag_atleastoneopen=true;
+		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: 0 }, 800);
-			$("#A_text").toggleClass("hidden");
-			flag=false;}*/
+			$("html, body").animate({ scrollTop: $("#Android").offset().top-50}, 900, function(){
+			$("#A_text").fadeOut(500);
+			flag_android=false;
+			flag_atleastoneopen=false;
+			});			
+		}
 	});
 	
 	$("#Web_Development").click(function(){
-		$("#WD_text").toggleClass("hidden");
-		$("#A_text").addClass("hidden");
-		$("#C_text").addClass("hidden");
-		$("#L_text").addClass("hidden");
-	    $("html, body").animate({ scrollTop: 500 }, 800); 
+		
+		if(flag_android==true)
+		{
+			$("#A_text").fadeOut(500);
+			flag_android=false;
+		}
+		
+		if(flag_coding==true)
+		{
+			$("#C_text").fadeOut(500);
+            flag_coding=false;			
+		}
+		
+		if(flag_linux==true)
+		{
+			$("#L_text").fadeOut(500);
+             flag_linux=false;			
+		}
+		
+		if(flag_webdev==false)
+	    {	
+	        $("#WD_text").fadeIn(500);
+			
+			if(flag_atleastoneopen==false)
+			$("html, body").animate({ scrollTop: $("#WD_text").offset().top }, 900);
+			
+			flag_webdev=true;
+			flag_atleastoneopen=true;
+		}
+		else
+	    {
+			$("html, body").animate({ scrollTop: $("#Android").offset().top-50}, 900, function(){
+			$("#WD_text").fadeOut(500);
+			flag_webdev=false;
+			flag_atleastoneopen=false;
+			});			
+		} 
 	});
 	
 	$("#Coding").click(function(){
-		$("#C_text").toggleClass("hidden");
-		$("#WD_text").addClass("hidden");
-		$("#A_text").addClass("hidden");
-		$("#L_text").addClass("hidden");
-	    $("html, body").animate({ scrollTop: 500 }, 800); 
+		
+		if(flag_webdev==true)
+		{
+			$("#WD_text").fadeOut(500);
+			flag_webdev=false;
+		}
+		
+		if(flag_android==true)
+		{
+			$("#A_text").fadeOut(500);
+            flag_android=false;			
+		}
+		
+		if(flag_linux==true)
+		{
+			$("#L_text").fadeOut(500);
+             flag_linux=false;			
+		}
+		
+		if(flag_coding==false)
+	    {	
+	        $("#C_text").fadeIn(500);
+			
+			if(flag_atleastoneopen==false)
+			$("html, body").animate({ scrollTop: $("#C_text").offset().top }, 900);
+			
+			flag_coding=true;
+			flag_atleastoneopen=true;
+		}
+		else
+	    {
+			$("html, body").animate({ scrollTop: $("#Android").offset().top-50}, 900, function(){
+			$("#C_text").fadeOut(500);
+			flag_coding=false;
+			flag_atleastoneopen=false;
+			});			
+		} 
 	});
 	
 	$("#Linux").click(function(){
-		$("#L_text").toggleClass("hidden");
-		$("#WD_text").addClass("hidden");
-		$("#C_text").addClass("hidden");
-		$("#A_text").addClass("hidden");
-	    $("html, body").animate({ scrollTop: 500 }, 800); 
+		
+		if(flag_webdev==true)
+		{
+			$("#WD_text").fadeOut(500);
+			flag_webdev=false;
+		}
+		
+		if(flag_coding==true)
+		{
+			$("#C_text").fadeOut(500);
+            flag_coding=false;			
+		}
+		
+		if(flag_android==true)
+		{
+			$("#A_text").fadeOut(500);
+             flag_android=false;			
+		}
+		
+		if(flag_linux==false)
+	    {	
+	        $("#L_text").fadeIn(500);
+			
+			if(flag_atleastoneopen==false)
+			$("html, body").animate({ scrollTop: $("#L_text").offset().top }, 900);
+			
+			flag_atleastoneopen=true;
+			flag_linux=true;
+		}
+		else
+	    {
+			$("html, body").animate({ scrollTop: $("#Android").offset().top-50}, 900, function(){
+			$("#L_text").fadeOut(500);
+			flag_linux=false;
+			flag_atleastoneopen=false;
+			});			
+		}
 	});
 	
 });
