@@ -105,19 +105,19 @@ h1{
 }
 
 .ch-img-1 { 
-	background-image: url(../images/13.jpg);
+	background-image: url(asd.jpg);
 }
 
 .ch-img-2 { 
-	background-image: url(../images/14.jpg);
+	background-image: url(asd.jpg);
 }
 
 .ch-img-3 { 
-	background-image: url(../images/15.jpg);
+	background-image: url(asd.jpg);
 }
 
 .ch-img-4 { 
-	background-image: url(../images/15.jpg);
+	background-image: url(asd.jpg);
 }
 
 .ch-info h3 {
@@ -259,7 +259,7 @@ background: linear-gradient(to left, #525252 , #3d72b4); /* W3C, IE 10+/ Edge, F
   background:#333;
   width:50%;
   color:#fff;
-  font:300 50px 'open sans',sans-serif;
+  font:30 50px 'open sans',sans-serif;
 }
 /* Overlay */
 .overlayp{
