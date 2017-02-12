@@ -6,6 +6,10 @@ $(document).ready(function(){
 	var flag_linux=false;
 	var flag_atleastoneopen=false;
 	
+	var bottom = $(window).height() - $("#Linux").offset().top-$("#Linux").height();
+	
+	$(".description").css("margin-top",bottom+'px');
+	
 	$("#Android").click(function(){
 		
 		if(flag_webdev==true)
