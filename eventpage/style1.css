@@ -234,27 +234,48 @@ button:hover{
 }
 .main1{
 background: #606c88; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #606c88 , #3f4c6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b, transparent) url("asd.jpg") no-repeat center;; /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #606c88 , #3f4c6b, transparent), url("asd.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover; 
 }
 .main2{
 background: #005C97; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to left, #005C97 , #363795, transparent),url("asd.jpg") no-repeat center;; /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #005C97 , #363795, transparent), url("asd.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover; 
 }
 .main3{
 background: #4B79A1; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #283E51 , #4B79A1); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left,  #283E51 , #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+background: -webkit-linear-gradient(to left, #283E51 , #4B79A1, transparent),url("asd.jpg") no-repeat center;; /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left,  #283E51 , #4B79A1, transparent), url("asd.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover; 
 }
+
+/*.main4{
+background: #525252; /* fallback for old browsers *
+background: -webkit-linear-gradient(to left, #525252 , #3d72b4); /* Chrome 10-25, Safari 5.1-6 *background: url('asd.jpg') , linear-gradient(to left, #525252 , #3d72b4); // Standard, IE10
+background: linear-gradient(to left, #525252 , #3d72b4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
+}*/
 
 .main4{
+
 background: #525252; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #525252 , #3d72b4); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #525252 , #3d72b4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to left, #525252 , #3d72b4, transparent), url("asd.jpg") no-repeat center; /* Chrome 10-25, Safari 5.1-6 */ 
+
+background: linear-gradient(to left, #525252 , #3d72b4, transparent), url("asd.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover; 
+
 }
+&:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+	opacity: .6; 
+  }
 .panel1, .panel2, .panel3, .panel4{
   background:#333;
   width:50%;
