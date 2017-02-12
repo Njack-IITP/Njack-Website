@@ -12,13 +12,17 @@ body{
 }
 
 .tabs{
-	margin:5px;	
+	margin:5px;
+	margin-top:8px;
+	margin-right:8px;
+	border-radius:8px;
 	float:left;
 	width:24%;
 	background-color:lightgrey;
 	height:75vh;
 	color:black;
 	cursor:pointer;
+	box-shadow:5px 5px 5px #1E1D1D;
 }
 
 
