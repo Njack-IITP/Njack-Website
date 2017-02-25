@@ -6,8 +6,8 @@ $(document).ready(function(){
 	var flag_linux=false;
 	var flag_atleastoneopen=false;
 	
-	var bottom = $(window).height() - $("#Linux").offset().top-$("#Linux").height();
-	
+	var bottom = $("#Linux").offset().top+$("#Linux").height()+5;
+		
 	$(".description").css("margin-top",bottom+'px');
 	
 	$(document).ready(function(){
