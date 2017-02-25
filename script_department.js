@@ -10,6 +10,42 @@ $(document).ready(function(){
 	
 	$(".description").css("margin-top",bottom+'px');
 	
+	$(document).ready(function(){
+$("#LinuxCircle").mouseover(function(){
+$("#content-linux").fadeIn();
+})
+$("#LinuxCircle").mouseout(function(){
+$("#content-linux").fadeOut();
+})
+});
+
+$(document).ready(function(){
+$("#WebdevCircle").mouseover(function(){
+$("#content-webdev").fadeIn();
+$("#WebdevCircle").mouseout(function(){
+$("#content-webdev").fadeOut();
+})
+})
+});
+
+$(document).ready(function(){
+$("#CompCircle").mouseover(function(){
+$("#content-comp").fadeIn();
+})
+$("#CompCircle").mouseout(function(){
+$("#content-comp").fadeOut();
+})
+});
+
+$(document).ready(function(){
+$("#AndroidCircle").mouseover(function(){
+$("#content-android").fadeIn();
+})
+$("#AndroidCircle").mouseout(function(){
+$("#content-android").fadeOut();
+})
+});
+	
 	$("#Android").click(function(){
 		
 		if(flag_webdev==true)

@@ -23,6 +23,100 @@
 	background-size: 100% 100%;
 }
 
+#img{
+position:absolute;
+height:100px;
+width:100px;
+top:10.75%;
+left:32.25%;
+}
+
+.circle{
+position:absolute;
+width:110px;
+height:110px;
+padding:0px 0px;
+margin:0px auto;
+background:pink;
+color:black;
+border-radius:55px;
+border radius: 50%;
+cursor:pointer;
+text-align:center;
+vertical-align: middle;
+transition:0.75s;
+transition-timing-function:cubic-bezier(.4,.44,.9,.45);
+font-size:16px;
+
+}
+
+#LinuxCircle{
+top:9%;
+left:64%;
+}
+
+#WebdevCircle{
+top:9%;
+left:27%;
+}
+
+#CompCircle{
+top:69%;
+left:27%;
+}
+
+#AndroidCircle{
+top:69%;
+left:64%;
+}
+
+.circle:hover{
+background:red;
+color:yellow;
+transform:rotateZ(360deg);
+}
+
+#content-linux{
+position:absolute;
+top:20%;
+left:46%;
+color:white;
+text-align:center;
+display:none;
+}
+
+#content-android{
+position:absolute;
+top:20%;
+left:39%;
+color:white;
+text-align:center;
+display:none;
+}
+
+#content-webdev{
+position:absolute;
+top:20%;
+left:41%;
+color:white;
+text-align:center;
+display:none;
+}
+
+#content-comp{
+position:absolute;
+top:20%;
+left:40%;
+color:white;
+text-align:center;
+display:none;
+}
+
+#tabs{
+	position:relative;
+	top:100%;
+}
+
 
 .description{
 	background-color:black;
