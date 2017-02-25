@@ -123,7 +123,8 @@ display:none;
 	height:70vh;
 	color:white;
 	width:100%;
-	padding:15px;
+	padding:0px;
+	position:absolute;
 }
 
 #A_text,#WD_text,#C_text,#L_text{

@@ -5,46 +5,45 @@ $(document).ready(function(){
 	var flag_coding=false;
 	var flag_linux=false;
 	var flag_atleastoneopen=false;
-	
-	var bottom = $("#Linux").offset().top+$("#Linux").height()+5;
 		
-	$(".description").css("margin-top",bottom+'px');
+	$(".description").css("margin-top",45+'vh');
 	
-	$(document).ready(function(){
-$("#LinuxCircle").mouseover(function(){
-$("#content-linux").fadeIn();
-})
-$("#LinuxCircle").mouseout(function(){
-$("#content-linux").fadeOut();
-})
-});
+	$("#LinuxCircle").mouseover(function(){
+	$("#content-linux").fadeIn();
+	});
 
-$(document).ready(function(){
-$("#WebdevCircle").mouseover(function(){
-$("#content-webdev").fadeIn();
-$("#WebdevCircle").mouseout(function(){
-$("#content-webdev").fadeOut();
-})
-})
-});
+	$("#LinuxCircle").mouseout(function(){
+	$("#content-linux").fadeOut();
+	});
 
-$(document).ready(function(){
-$("#CompCircle").mouseover(function(){
-$("#content-comp").fadeIn();
-})
-$("#CompCircle").mouseout(function(){
-$("#content-comp").fadeOut();
-})
-});
 
-$(document).ready(function(){
-$("#AndroidCircle").mouseover(function(){
-$("#content-android").fadeIn();
-})
-$("#AndroidCircle").mouseout(function(){
-$("#content-android").fadeOut();
-})
-});
+
+	$("#WebdevCircle").mouseover(function(){
+	$("#content-webdev").fadeIn();
+	});
+
+	$("#WebdevCircle").mouseout(function(){
+	$("#content-webdev").fadeOut();
+	});
+
+
+
+	$("#CompCircle").mouseover(function(){
+	$("#content-comp").fadeIn();
+	});
+
+	$("#CompCircle").mouseout(function(){
+	$("#content-comp").fadeOut();
+	});
+
+
+	$("#AndroidCircle").mouseover(function(){
+	$("#content-android").fadeIn();
+	});
+	
+	$("#AndroidCircle").mouseout(function(){
+	$("#content-android").fadeOut();
+	});
 	
 	$("#Android").click(function(){
 		
@@ -68,7 +67,7 @@ $("#content-android").fadeOut();
 		
 		if(flag_android==false)
 	    {	
-	        $("#A_text").fadeIn(500);
+	        $("#A_text").fadeTo("slow",1.0);
 			
 			if(flag_atleastoneopen==false)
 			$("html, body").animate({ scrollTop: $("#A_text").offset().top }, 900);
@@ -78,8 +77,8 @@ $("#content-android").fadeOut();
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#Android").offset().top-50}, 900, function(){
-			$("#A_text").fadeOut(500);
+			$("html, body").animate({ scrollTop: $("#Android").offset().top-200}, 1000, function(){
+			$( "#A_text" ).fadeTo( "slow" , 0.0);
 			flag_android=false;
 			flag_atleastoneopen=false;
 			});			
@@ -108,7 +107,7 @@ $("#content-android").fadeOut();
 		
 		if(flag_webdev==false)
 	    {	
-	        $("#WD_text").fadeIn(500);
+	        $("#WD_text").fadeTo("slow",1.0);
 			
 			if(flag_atleastoneopen==false)
 			$("html, body").animate({ scrollTop: $("#WD_text").offset().top }, 900);
@@ -118,8 +117,8 @@ $("#content-android").fadeOut();
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#Android").offset().top-50}, 900, function(){
-			$("#WD_text").fadeOut(500);
+			$("html, body").animate({ scrollTop: $("#Android").offset().top-200}, 900, function(){
+			$("#WD_text").fadeTo("slow",0.0);
 			flag_webdev=false;
 			flag_atleastoneopen=false;
 			});			
@@ -148,7 +147,7 @@ $("#content-android").fadeOut();
 		
 		if(flag_coding==false)
 	    {	
-	        $("#C_text").fadeIn(500);
+	        $("#C_text").fadeTo("slow",1.0);
 			
 			if(flag_atleastoneopen==false)
 			$("html, body").animate({ scrollTop: $("#C_text").offset().top }, 900);
@@ -158,8 +157,8 @@ $("#content-android").fadeOut();
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#Android").offset().top-50}, 900, function(){
-			$("#C_text").fadeOut(500);
+			$("html, body").animate({ scrollTop: $("#Android").offset().top-200}, 900, function(){
+			$("#C_text").fadeTo("slow",0.0);
 			flag_coding=false;
 			flag_atleastoneopen=false;
 			});			
@@ -188,7 +187,7 @@ $("#content-android").fadeOut();
 		
 		if(flag_linux==false)
 	    {	
-	        $("#L_text").fadeIn(500);
+	        $("#L_text").fadeTo("slow",1.0);
 			
 			if(flag_atleastoneopen==false)
 			$("html, body").animate({ scrollTop: $("#L_text").offset().top }, 900);
@@ -198,8 +197,8 @@ $("#content-android").fadeOut();
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#Android").offset().top-50}, 900, function(){
-			$("#L_text").fadeOut(500);
+			$("html, body").animate({ scrollTop: $("#Android").offset().top-200}, 900, function(){
+			$("#L_text").fadeTo("slow",0.0);
 			flag_linux=false;
 			flag_atleastoneopen=false;
 			});			
