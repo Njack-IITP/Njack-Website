@@ -1,5 +1,37 @@
 $(document).ready(function(){
 	
+	if($(window).width()<770)
+	{
+		$(".tabs").css("width","93vw");
+		$(".tabs").css("display","block");
+	}
+	
+	if($(window).width()<=1150)
+	{
+		$(".tabs").css("margin-right","0vw");
+	}
+	
+	$(window).resize(function(){
+		
+		if($(window).width()<770)
+		{
+			$(".tabs").css("width","93vw");
+			$(".tabs").css("display","block");
+		}			
+		else if($(window).width()<=1150)
+		{
+			$(".tabs").css("width","23vw");
+			$(".tabs").css("display","inline-block");
+			$(".tabs").css("margin-right","0vw");
+		}			
+		else
+		{
+			$(".tabs").css("width","23vw");
+			$(".tabs").css("margin-right","1vw");			
+			$(".tabs").css("display","inline-block");
+		}
+	});
+	
 	var flag_android=false;
 	var flag_webdev=false;
 	var flag_coding=false;

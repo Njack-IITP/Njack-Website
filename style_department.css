@@ -10,11 +10,10 @@
 }
 
 .tabs{
-	margin-right:2vh;
+	margin-right:1vw;
 	margin-top:8px;
 	border-radius:8px;
 	display:inline-block;
-	/*float:left;*/
 	width:23vw;
 	height:40vh;
 	cursor:pointer;
