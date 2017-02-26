@@ -1,7 +1,61 @@
+/*  CSS for nab=v bar */
+html,body {
+  font:Raleway,serif;
+  height:100%;
+}
+
+
+h1{
+  text-align: center;
+}
+.mainPage{
+  min-height:98% ;
+  height:98%;
+  width:100%;
+  display:block;
+  margin:0;
+  padding-top:50px;
+
+  background: #0099F7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0099F7 , #F11712); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0099F7 , #F11712); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.intro {
+  height:50% ;
+  width:100%;
+  display:block;
+  margin:0;
+
+  background: #4DA0B0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4DA0B0 , #D39D38); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4DA0B0 , #D39D38); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.events {
+  min-height:50% ;
+  width:100%;
+  display:block;
+  margin:0;
+  padding-top:20px;
+  
+  background: #67B26F; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+  
+}
+
+
+
+
+
+
 /* Config */
 /* Styles */
-html, body {
-  height: 100%; }
+///css for animation particle   
+
 
 body {
   display: flex;
