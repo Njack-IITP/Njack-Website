@@ -5,8 +5,10 @@ $(document).ready(function(){
 	var flag_coding=false;
 	var flag_linux=false;
 	var flag_atleastoneopen=false;
-		
-	$(".description").css("margin-top",45+'vh');
+
+	var bottom = 20;	
+	
+	$(".description").css("margin-top",bottom+'px');
 	
 	$("#LinuxCircle").mouseover(function(){
 	$("#content-linux").fadeIn();
