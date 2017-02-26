@@ -125,6 +125,7 @@ display:none;
 	width:100%;
 	padding:0px;
 	position:absolute;
+	margin-left:-14px;
 }
 
 #A_text,#WD_text,#C_text,#L_text{
@@ -167,4 +168,8 @@ display:none;
 	text-align:center;
 	font-family: 'Sansita', sans-serif;
 	font-size:400%;
+}
+
+.description > p{
+	padding:10px;	
 }
