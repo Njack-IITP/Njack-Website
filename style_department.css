@@ -124,7 +124,7 @@ display:none;
 .description{
 	background-color:black;
 	height:70vh;
-	color:white;
+	color:black;
 	width:100%;
 	padding:0px;
 	position:absolute;
@@ -133,22 +133,27 @@ display:none;
 
 #A_text,#WD_text,#C_text,#L_text{
 	display:none;
+	background-repeat: repeat;
 }
 
 #A_text{
-	background-color:rgba(0, 171, 43, 1);
+	/*background-color:rgba(0, 171, 43, 1);*/
+	background-image:url("android_text.jpg");
 }
 
 #WD_text{
-	background-color:rgb(218, 148, 0);
+	/*background-color:rgb(218, 148, 0);*/
+	background-image:url("webdevelopment_text.jpg");
 }
 
 #C_text{
-	background-color:rgb(255, 105, 105);
+	/*background-color:rgb(255, 105, 105);*/
+	background-image:url("coding_text.jpg");
 }
 
 #L_text{
-	background-color:#7c0294;
+	/*background-color:#7c0294;*/
+	background-image:url("linux_text.jpg");
 }
 
 #Android{
