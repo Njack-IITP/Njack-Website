@@ -2,13 +2,13 @@
 <html>
 	<head>
 	
-		<meta charset="UTP-8" lang="en">
+		<meta charset="UTF-8" lang="en">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Njack IITP</title>
 		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="style1.css">
+		<link rel="stylesheet" href="style1.css">		<link rel="stylesheet" href="style2.css">
 		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script><!-- jquey host-->
 		 <!-- Latest compiled and minified CSS -->
@@ -19,7 +19,7 @@
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="script.js"></script>
+		<script src="script.js"></script><script src="js/modernizr-2.6.2.min.js"></script><script src="polyfills.js"></script>
 	</head>
 	
 	
@@ -39,18 +39,30 @@
     <div></div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-	      <li><a href="#e1">Event 1</a></li>
+	      <!--<li><a href="#e1">Event 1</a></li>
 				<li><a href="#e2">Event 2</a></li>
 				<li><a href="#e3">Event 3</a></li>
-        <li><a href="#e4">Event 4</a></li>
+        <li><a href="#e4">Event 4</a></li>-->
         <li><a href="#">Home</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
+<div style="position: relative">
+<button class="cn-button" id="cn-button">Menu</button>
+				<div class="cn-wrapper" id="cn-wrapper">
+					<ul>
+						<li><a href="#e1"><span>event1</span></a></li>
+						<li><a href="#e2"><span>event2</span></a></li>
+						<li><a href="#e3"><span>event3</span></a></li>
+						<li><a href="#e4"><span>event4</span></a></li>
+					 </ul>
+				</div>
 
-<div>
+</div>
+
+<div id="cn-overlay" class="cn-overlay"></div>
 <!--
 <div class="events">
 	  <div class="cont">   
@@ -242,6 +254,6 @@
 	  </div>
 	</div>
 	
-	
+	<script src="script2.js"></script>
 	</body>
 </html>
