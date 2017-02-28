@@ -168,3 +168,9 @@ header {
 .fotorama__wrap {
     margin: 0 auto;
 }
+
+.fotorama__caption__wrap {
+    font-size: 50px;
+    opacity: 0.9;
+    margin: 24px 12px;
+}
