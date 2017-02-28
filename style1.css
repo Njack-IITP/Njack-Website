@@ -107,22 +107,22 @@ h1{
 }
 
 .ch-img-1 { 
-	background-image: url(asd.jpg);
+	background-image: url(./images/byi.jpg);
 	z-index: 12;
 }
 
 .ch-img-2 { 
-	background-image: url(asd.jpg);
+	background-image: url(./images/ctfi.jpg);
 	z-index: 11;
 }
 
 .ch-img-3 { 
-	background-image: url(asd.jpg);
+	background-image: url(./images/nji.jpg);
 	z-index: 10;
 }
 
 .ch-img-4 { 
-	background-image: url(asd.jpg);
+	background-image: url(./images/mbi.jpg);
 	z-index: 8;
 }
 
@@ -133,7 +133,7 @@ h1{
 	height: inherit;
 	border-radius: 50%;
 	overflow: hidden;
-	background: #c9512e url(noise.png);
+	background: #c9512e url(./images/noise.png);
 	box-shadow: inset 0 0 0 5px rgba(0,0,0,0.05);
 }
 
