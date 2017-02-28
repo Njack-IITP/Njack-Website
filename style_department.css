@@ -6,7 +6,7 @@
   margin:0;
   padding-top:50px;
   background-color:#DFE2DB;
-  height:100vh;
+  height:100vh;    
 }
 
 .tabs{
@@ -125,12 +125,12 @@ display:none;
 	background-color:black;
 	height:70vh;
 	color:black;
-	width:98.75vw;
+	width:98.59vw;
 	padding:0px;
 	position:absolute;
 	margin-left:-14px;
 	margin-right:25px;
-	box-shadow: 7px -4px 15px 4px rgba(56,44,44,0.88);
+	box-shadow: 7px -4px 15px 4px rgba(56,44,44,0.88);	
 }
 
 #A_text,#WD_text,#C_text,#L_text{

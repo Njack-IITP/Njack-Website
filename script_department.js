@@ -79,6 +79,8 @@ $(document).ready(function(){
 	$("#content-android").fadeOut();
 	});
 	
+	var scrollVar= $(window).height() * 0.31;;
+	
 	$("#Android").click(function(){
 		
 		if(flag_webdev==true)
@@ -111,8 +113,8 @@ $(document).ready(function(){
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#Android").offset().top-200}, 1000, function(){
-			$( "#A_text" ).fadeTo( "slow" , 0.0);
+			$("html, body").animate({ scrollTop: $("#img").offset().top+scrollVar}, 1000, function(){
+			$( "#A_text" ).fadeTo( 0 , 0.0,function(){$( "#A_text" ).fadeOut(0);});
 			flag_android=false;
 			flag_atleastoneopen=false;
 			});			
@@ -151,8 +153,8 @@ $(document).ready(function(){
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#Android").offset().top-200}, 900, function(){
-			$("#WD_text").fadeTo("slow",0.0);
+			$("html, body").animate({ scrollTop: $("#img").offset().top+scrollVar}, 900, function(){
+			$("#WD_text").fadeTo(0,0.0,function(){$( "#WD_text" ).fadeOut(0);});
 			flag_webdev=false;
 			flag_atleastoneopen=false;
 			});			
@@ -191,8 +193,8 @@ $(document).ready(function(){
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#Android").offset().top-200}, 900, function(){
-			$("#C_text").fadeTo("slow",0.0);
+			$("html, body").animate({ scrollTop: $("#img").offset().top+scrollVar}, 900, function(){
+			$("#C_text").fadeTo(0,0.0,function(){$( "#C_text" ).fadeOut(0);});
 			flag_coding=false;
 			flag_atleastoneopen=false;
 			});			
@@ -231,8 +233,8 @@ $(document).ready(function(){
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#Android").offset().top-200}, 900, function(){
-			$("#L_text").fadeTo("slow",0.0);
+			$("html, body").animate({ scrollTop: $("#img").offset().top+scrollVar}, 900, function(){
+			$("#L_text").fadeTo(0,0.0,function(){$( "#L_text" ).fadeOut(0);});
 			flag_linux=false;
 			flag_atleastoneopen=false;
 			});			
