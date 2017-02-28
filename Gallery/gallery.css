@@ -171,18 +171,6 @@ header {
     z-index: 20;
 }
 
-/* When the height of the screen is less than 500 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 500px) {
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
 /* Center fotorama gallery */
 .fotorama__wrap {
     margin: 0 auto;
@@ -193,4 +181,18 @@ header {
     font-size: 50px;
     opacity: 0.9;
     margin: 24px 12px;
+}
+
+/* When the height of the screen is less than 600 pixels,
+   position the close button again, so it doesn't overlap with the caption text */
+@media screen and (max-height: 500px) {
+    .overlay .closebtn {
+        font-size: 50px
+    }
+    .fotorama__caption__wrap {
+        font-size: 30px;
+        opacity: 0.9;
+        margin: 24px 12px;
+    }
+    
 }
