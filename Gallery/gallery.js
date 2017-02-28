@@ -1,7 +1,12 @@
 $(document).ready(function(){
 	
+	var KEYCODE_ENTER = 13;
+	var KEYCODE_ESC = 27;
+	
 	//For checking if fotorama has been initialized or not
 	var Fnotinit = true;
+
+	var id = 0;
 
 	// Fotorama API objects
 	var $fotoramaDiv, fotorama;
@@ -10,6 +15,14 @@ $(document).ready(function(){
 	$('.closebtn').on('click', function() {
 		$("#myNav").fadeOut(200);
 	});
+
+	//If Enter is pressed, open gallery with the first photo
+	//If Esc is pressed, close gallery (if open)
+	$(document).keyup(function(e) {
+	  if (e.keyCode == KEYCODE_ENTER) $('.hovereffect')[0].click();
+	  if (e.keyCode == KEYCODE_ESC) $('.closebtn').click();
+	});
+
 
 	//Show the fotorama gallery when an image is clicked on
 	$('.hovereffect').on('click', function() {
@@ -37,7 +50,7 @@ $(document).ready(function(){
 		$("#myNav").fadeIn(200);
 
 		//Extract the id of the image and scroll to it
-		var id = parseInt(this.getAttribute('id'));
+		id = parseInt(this.getAttribute('id'));
 		fotorama.show(id);
 
 	});
