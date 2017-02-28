@@ -4,6 +4,8 @@ $(document).ready(function(){
 	{
 		$(".tabs").css("width","93vw");
 		$(".tabs").css("display","block");
+		$(".tabs").css("margin","auto");
+		$(".tabs").css("marginBottom","5px");
 	}
 	
 	if($(window).width()<=1150)
@@ -17,6 +19,8 @@ $(document).ready(function(){
 		{
 			$(".tabs").css("width","93vw");
 			$(".tabs").css("display","block");
+			$(".tabs").css("margin","auto");
+			$(".tabs").css("marginBottom","5px");
 		}			
 		else if($(window).width()<=1150)
 		{
@@ -105,7 +109,7 @@ $(document).ready(function(){
 	    {	
 	        $("#A_text").fadeTo("slow",1.0);
 			
-			if(flag_atleastoneopen==false)
+			if(flag_atleastoneopen==false || $(window).width()<770)
 			$("html, body").animate({ scrollTop: $("#A_text").offset().top }, 900);
 			
 			flag_android=true;
@@ -145,7 +149,7 @@ $(document).ready(function(){
 	    {	
 	        $("#WD_text").fadeTo("slow",1.0);
 			
-			if(flag_atleastoneopen==false)
+			if(flag_atleastoneopen==false || $(window).width()<770)
 			$("html, body").animate({ scrollTop: $("#WD_text").offset().top }, 900);
 			
 			flag_webdev=true;
@@ -185,7 +189,7 @@ $(document).ready(function(){
 	    {	
 	        $("#C_text").fadeTo("slow",1.0);
 			
-			if(flag_atleastoneopen==false)
+			if(flag_atleastoneopen==false || $(window).width()<770)
 			$("html, body").animate({ scrollTop: $("#C_text").offset().top }, 900);
 			
 			flag_coding=true;
@@ -225,7 +229,7 @@ $(document).ready(function(){
 	    {	
 	        $("#L_text").fadeTo("slow",1.0);
 			
-			if(flag_atleastoneopen==false)
+			if(flag_atleastoneopen==false || $(window).width()<770)
 			$("html, body").animate({ scrollTop: $("#L_text").offset().top }, 900);
 			
 			flag_atleastoneopen=true;
