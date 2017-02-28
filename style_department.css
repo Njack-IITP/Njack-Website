@@ -18,8 +18,8 @@
 	height:40vh;
 	cursor:pointer;
 	box-shadow: 5px 6px 20px 0px #1E1D1D;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
+    background-position: center;
 }
 
 ::-webkit-scrollbar { 
@@ -125,39 +125,48 @@ display:none;
 	background-color:black;
 	height:70vh;
 	color:black;
-	width:100%;
+	width:98.75vw;
 	padding:0px;
 	position:absolute;
 	margin-left:-14px;
+	margin-right:25px;
+	box-shadow: 7px -4px 15px 4px rgba(56,44,44,0.88);
 }
 
 #A_text,#WD_text,#C_text,#L_text{
 	display:none;
-	background-repeat: repeat;
 }
 
 #A_text{
 	/*background-color:rgba(0, 171, 43, 1);*/
 	background-image:url("android_text.jpg");
+	background-size: cover;
+    background-position: center;
 }
 
 #WD_text{
 	/*background-color:rgb(218, 148, 0);*/
 	background-image:url("webdevelopment_text.jpg");
+	background-size: cover;
+    background-position: center;
 }
 
 #C_text{
 	/*background-color:rgb(255, 105, 105);*/
 	background-image:url("coding_text.jpg");
+	background-size: cover;
+    background-position: center;
+	color:white;
 }
 
 #L_text{
 	/*background-color:#7c0294;*/
 	background-image:url("linux_text.jpg");
+	background-repeat: repeat;
 }
 
 #Android{
-	background-image:url("Android.jpg");	
+	background-image:url("Android2.jpg");	
 }
 
 #Web_Development{
