@@ -5,6 +5,11 @@ var o1=$('.overlayp1'),o2=$('.overlayp2'),o3=$('.overlayp3'),o4=$('.overlayp4'),
   panel3.css('min-height',m3.outerHeight());
   panel4.css('min-height',m4.outerHeight());
   
+  panel1.css('height',m1.outerHeight());
+  panel2.css('height',m2.outerHeight());
+  panel3.css('height',m3.outerHeight());
+  panel4.css('height',m4.outerHeight());
+  
 ob1.click(function(){
   o1.toggleClass('active');
 });

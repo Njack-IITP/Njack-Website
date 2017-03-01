@@ -9,6 +9,10 @@ h1{
   text-align: center;
 }
 
+h2{
+  text-align: center;
+}
+
 .events {
   min-height:30% ;
   width:100%;
@@ -75,7 +79,7 @@ h1{
 .ch-info-wrap {
 	top: 20px;
 	left: 20px;
-	background: #f9f9f9 url(../images/bg.jpg);
+	background: #f9f9f9 ;/*url(../image./eventimages/s/bg.jpg);*/
 	box-shadow: 
 		0 0 0 20px rgba(255,255,255,0.2), 
 		inset 0 0 3px rgba(115,114, 23, 0.8);
@@ -105,19 +109,19 @@ h1{
 }
 
 .ch-img-1 { 
-	background-image: url(asd.jpg);
+	background-image: url(./eventimages/ctfi.jpg);
 }
 
 .ch-img-2 { 
-	background-image: url(asd.jpg);
+	background-image: url(./eventimages/byi.jpg);
 }
 
 .ch-img-3 { 
-	background-image: url(asd.jpg);
+	background-image: url(./eventimages/nji.jpg);
 }
 
 .ch-img-4 { 
-	background-image: url(asd.jpg);
+	background-image: url(./eventimages/mbi.jpg);
 }
 
 .ch-info h3 {
@@ -234,35 +238,35 @@ button:hover{
 }
 .main1{
 background: #606c88; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b, transparent) url("asd.jpg") no-repeat center;; /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #606c88 , #3f4c6b, transparent), url("asd.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b, transparent) url("./eventimages/ctfbg.jpg") no-repeat center;; /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #606c88 , #3f4c6b, transparent), url("./eventimages/ctfbg.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background-size: cover; 
 }
 .main2{
 background: #005C97; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #005C97 , #363795, transparent),url("asd.jpg") no-repeat center;; /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #005C97 , #363795, transparent), url("asd.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to left, #005C97 , #363795, transparent),url("./eventimages/bybg.jpg") no-repeat center;; /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #005C97 , #363795, transparent), url("./eventimages/bybg.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background-size: cover; 
 }
 .main3{
 background: #4B79A1; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #283E51 , #4B79A1, transparent),url("asd.jpg") no-repeat center;; /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left,  #283E51 , #4B79A1, transparent), url("asd.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to left, #283E51 , #4B79A1, transparent),url("./eventimages/njbg.jpg") no-repeat center;; /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left,  #283E51 , #4B79A1, transparent), url("./eventimages/njbg.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background-size: cover; 
 }
 
 /*.main4{
 background: #525252; /* fallback for old browsers *
-background: -webkit-linear-gradient(to left, #525252 , #3d72b4); /* Chrome 10-25, Safari 5.1-6 *background: url('asd.jpg') , linear-gradient(to left, #525252 , #3d72b4); // Standard, IE10
+background: -webkit-linear-gradient(to left, #525252 , #3d72b4); /* Chrome 10-25, Safari 5.1-6 *background: url('./eventimages/asd.jpg') , linear-gradient(to left, #525252 , #3d72b4); // Standard, IE10
 background: linear-gradient(to left, #525252 , #3d72b4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
 }*/
 
 .main4{
 
 background: #525252; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #525252 , #3d72b4, transparent), url("asd.jpg") no-repeat center; /* Chrome 10-25, Safari 5.1-6 */ 
+background: -webkit-linear-gradient(to left, #525252 , #3d72b4, transparent), url("./eventimages/mbbg.jpg") no-repeat center; /* Chrome 10-25, Safari 5.1-6 */ 
 
-background: linear-gradient(to left, #525252 , #3d72b4, transparent), url("asd.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to left, #525252 , #3d72b4, transparent), url("./eventimages/mbbg.jpg") no-repeat center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background-size: cover; 
 
 }
@@ -281,6 +285,7 @@ background-size: cover;
   width:50%;
   color:#fff;
   font:30 50px 'open sans',sans-serif;
+  overflow: scroll;
 }
 /* Overlay */
 .overlayp{
