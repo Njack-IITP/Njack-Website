@@ -156,9 +156,8 @@ body {
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-position :absolute ;
-  left:11vw ;
-  top:35vh;
+  margin-left:100px;
+  margin-right: 30px ;
   display: inline-block;
   
 }
@@ -233,9 +232,6 @@ position :absolute ;
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-position :absolute ;
-  right:41vw ;
-  top:35vh;
   display: inline-block;
   
 }
@@ -262,9 +258,7 @@ position :absolute ;
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-position :absolute ;
-  right:11vw;
-  top:35vh;
+
   display: inline-block
   
 }
@@ -373,3 +367,7 @@ position :absolute ;
 }
 
 
+.row1
+{
+  margin-top:188px ;
+}
