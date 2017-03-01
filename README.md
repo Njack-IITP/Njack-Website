@@ -19,3 +19,9 @@ Discuss
 ------
 
 The best way to interact is through Github issues and comments. We encourage any questions related to the project.
+
+Info for contributors
+------
+ * Fork this repository
+ * Make necessary edits and commit on your fork
+ * Open a pull request on "master" branch 
