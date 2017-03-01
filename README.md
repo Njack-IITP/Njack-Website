@@ -22,6 +22,7 @@ The best way to interact is through Github issues and comments. We encourage any
 
 Info for contributors
 ------
+If you are interested to contribute / add features / fix issues, you can:
  * Fork this repository
  * Make necessary edits and commit on your fork
  * Open a pull request on "master" branch 
