@@ -189,15 +189,20 @@
 }
 
 .footer{
-
+width: 100% ;
   position: relative;
   margin-top: 200px ;
   background-color: #333 ;
   height:325px;
   border-top-right-radius: 1%;
 border-top-left-radius: 1%;
-}
 
+}
+a
+{
+  text-decoration: none ;
+  border-radius: 100% ;
+}
 
 
 
