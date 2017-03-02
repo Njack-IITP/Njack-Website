@@ -6,7 +6,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2) url("tmp725124211256852482.jpg") no-repeat bottom center;
+  background: rgba(255, 255, 255, 0.2) url("/home/manish/Njack-Website/currDev/texture-1306790_1920(1).jpg") no-repeat bottom center;
   background-blend-mode: screen;
   background-size: cover;
   z-index: -1; }
@@ -127,15 +127,16 @@
 
 
 .top_bar{
-  height:45px ;
-  background: -webkit-linear-gradient(90deg, #1C1C1C 10%, #494949 90%); background: -moz-linear-gradient(90deg, #1C1C1C 10%, #494949 90%); background: linear-gradient(90deg, #1C1C1C 10%, #494949 90%);
+  height:52px ;
+   background: linear-gradient(to top right, #77c9d4 0%, #57bc90 100%);
   width:100%;
-  top:50px ;
+  top:56px ;
  right:0px ;
  left: 0px ;
  font:Raleway,serif;
- color: #80ffff ;
-
+ color: #333  ;
+border-bottom-left-radius: 11% ;
+border-bottom-right-radius: 11%;
 }
 
   #f1_container2 {
