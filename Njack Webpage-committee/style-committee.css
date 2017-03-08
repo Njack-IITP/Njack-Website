@@ -1,0 +1,533 @@
+html, body{
+				          margin: 0;
+				          height: 100%;
+                          width: 100%;						  
+						  overflow: hidden;
+						}
+                
+				#body-1{
+				           position: absolute;
+						   height:100vh;
+						   width: 100vw;
+						   background-color: rgba(255,0,0,0.8)  ;
+						   background-blend-mode: overlay;
+						   margin: 0;
+						   padding: 0;
+						   top: 0;
+						   left: 0;
+						   background-image: url("background-1.jpg");
+						   background-position: -20vw -20vh;
+						   background-repeat: no-repeat;
+						   background-size: 130vw 130vh;
+						   animation: animatedbackground 10s linear infinite alternate;
+						}
+				
+				#body-2{
+				           position: absolute;
+						   height:100vh;
+						   width: 100vw;
+						   top: 100vh;
+						   left: 0vw;
+						   background-color: rgba(0,0,255,0.86)  ;
+						   background-blend-mode: overlay;
+						   margin: 0;
+						   padding: 0;
+						   background-image: url("background-1.jpg");
+						   background-position: -20vw -20vh;
+						   background-repeat: no-repeat;
+						   background-size: 130vw 130vh;
+						   animation: animatedbackground 10s linear infinite alternate;
+						   height: 100vh;
+						   width: 100vw;
+						   display: none;
+						   }
+					@keyframes animatedbackground {
+	                                                 from { background-position: -20vw -20vh; }
+	                                                 to { background-position: -18vw -18vh; }
+                                                   }
+				   
+				   .cont{
+                           	perspective: 1000vh; 
+							margin-top: 73vh;
+}							
+
+
+				  .keyboard{
+				               
+						        
+							   height: 55vh;
+							   width: 49vw;
+							   transform-style: preserve-3d;
+							   border-left: 2.8vh solid #202020;
+							   border-right: 2.8vh solid #202020;
+						       border-top: 4.5vh solid #202020;
+                               border-bottom: 4.5vh solid #202020;
+							   border-radius: 2vw; 
+							   animation: trap 2s ease forwards 0.9s;
+							   backface-visibility: hidden;
+							   transform-origin: 0 0;
+							   margin:auto;
+							   position: relative;
+                               transform: rotateX(88deg);
+							   }
+
+					@keyframes trap{
+					                   0%{
+									          
+											  transform: rotateX(88deg);
+											}
+									    100%{
+										      transform: rotateX(70deg);
+											  
+										}
+
+					                 }
+                    .my-img { width:100%; height: auto; }
+					
+					.keys{
+					           border-left: 2vh solid #202020;
+							   border-right: 2vh solid #202020;
+						       border-top: 4.5vh solid #202020;
+                               border-bottom: 4.5vh solid #202020;
+							   border-radius: 2vw;
+                               height: 5vh;
+							   width: 5vw;
+							   background-color: #202020;
+							   margin: 1.0vw;
+							   
+							   
+						 }
+					
+					.row2{
+					        position: absolute;
+							left: 8vw;
+							top:0;
+						}
+					
+					.row3{
+					        position: absolute;
+							left: 16vw;
+							top: 0;
+						}
+					.row4{
+					        position: absolute;
+							left: 24vw;
+							top: 0;
+							}
+					.row5{
+					       position: absolute;
+                           left: 32vw;
+                           top: 0;
+                         }						   
+					.row6{
+					       position: absolute;
+                           left: 40vw;
+                           top: 0;
+                         }
+					.row7{
+					       position: relative;
+                           left: 48vw;
+                           top: 0;
+                         }
+					.desktop{
+					           position: relative;
+							   height: 28vw;
+							   width: 52vw;
+							   border: 2.5vw solid #202020 ;
+							   top: 5vh;
+							   left: 22.5vw;
+							   border-radius: 2.4vw;
+							   background-color: #bad0c6;
+							   animation: trap1 4s forwards 0.9s;
+							   transform-origin: bottom;
+							   transform-style: preserve-3d;
+							   transform: rotateX(274deg);
+							}   
+					.desktop-2{
+                               position: absolute;;
+							   height: 85vh;
+							   width: 70vw;
+							   border: 2.7vw solid #202020 ;
+							   top: 0vh;
+							   left: 15vw;
+							   border-radius: 2.4vw;
+							   background-color: #bad0c6;
+							   animation: trap1 4s forwards 0.9s;
+							   transform-origin: bottom;
+							   transform-style: preserve-3d;
+							   transform: rotateX(274deg); 					
+							   
+							   }
+			@keyframes trap1{
+					                   0%{
+									          
+											  transform: rotateX(274deg);
+											}
+									    100%{
+										      transform: rotateX(360deg);
+											  
+											  
+										}
+
+					                 }
+                        .cont1{
+                                 perspective: 1000vh;
+                                 top: 9vh;
+								 position:absolute;
+							   }								 
+							
+						 
+					.desktop h1, .desktop-2 h1{
+                                   text-align: center;
+                                   margin-top: 4%;
+                                   font-size: 4vw;
+                                   font-weight: light;
+                                   color: #2f2f2c;
+                                   /*text-shadow: 0.25vh 0.25vh 0.25vh black;*/
+								   font-family: UK;
+                                }
+            @font-face{
+            	         font-family: UK;
+            	         src: url(PrinsesstartaLightDEMO.ttf);
+            	         font-weight: bold;
+            }                    								
+			@font-face{
+            	         font-family: Poll;
+            	         src: url(PortLligatSans-Regular.ttf);
+            	         font-weight: bold;
+            } 
+                         @font-face{
+            	         font-family: Comme;
+            	         src: url(Comme-ExtraLight.ttf);
+            	         
+					}
+            .keyboard:hover, .desktop:hover{
+                                              	box-shadow: 0 0 6vh blue;
+                                            }
+		
+
+        .pos1{
+		        position: relative;
+				top: 3vh;
+				left: 0vw;
+			}
+        .pos2{
+		        position: relative;
+				top: -17vh;
+				left: 15vw;
+			}
+        .pos3{
+		        position: relative;
+				top: -37vh;
+				left: 31vw;
+			}
+        .pos-1{
+		        position: relative;
+				top: -1.2vh;
+				left: 1vw;
+			}
+        .pos-2{
+		        position:relative;
+				top: -21vh;
+				left: 16.34vw;
+			}
+        .pos-3{
+		        position: relative;
+				top: -41vh;
+				left: 31.67vw;
+			}			
+        .pos-4{
+		        position: relative;
+				top: -61vh;
+				left: 47vw;
+			}			
+        .pos-5{
+		        position:absolute;
+				top: 20vw;
+				left: 1vw;
+			}			
+        .pos-6{
+		        position:absolute;
+				top: 20vw;
+				left: 16.34vw;
+			}			
+        .pos-7{
+		        position:absolute;
+				top: 20vw;
+				left: 31.67vw;
+			}			
+        .pos-8{
+		        position:absolute;
+				top: 20vw;
+				left: 47vw;
+			}						
+		.cont-1, .cont-2{
+		          perspective: 1000;
+				  height: 20vh;
+				  width: 20vh;
+ 
+				}
+		.card{
+		           position: relative;
+				   height: 14vw;
+				   width: 14vw;
+				   margin-left: 1vw;
+				   margin-right: 1vw;
+				   transition: all 0.7s ease 0.2s;                     //Take care for different browsers
+				   border: 0.1vh solid black;
+				   transform-style: preserve-3d;
+				   cursor: pointer;
+				   }
+		.card-1{
+		           position: relative;
+				   height: 12vw;
+				   width: 12vw;
+				   margin-left: 1vw;
+				   margin-right: 1vw;
+				   transition: all 0.7s ease 0.2s;                     //Take care for different browsers
+				   border: 0.1vh solid black;
+				   transform-style: preserve-3d;
+				   cursor: pointer;
+				   }
+		.cont-1:hover .card{
+		              transform: rotateY(180deg);
+}
+		.cont-1:hover .card-1{
+		              transform: rotateY(180deg);
+}
+		.front, .back{
+		                height:14vw;
+						width: 14vw;
+						position:absolute;
+						top: 0;
+						left: 0;
+						backface-visibility: hidden;
+						font-weight: lighter;
+						font-size: 1vw;
+						font-family: Comme;
+						text-overflow: ellipsis;
+						border: 0vh solid black;
+						word-wrap: break;
+						overflow: hidden;
+						border-radius: 1vw;
+						transition: all 0.7s ease 0.2s;
+						
+		}
+		.front-1, .back-1{
+		                height:12vw;
+						width: 12vw;
+						position:absolute;
+						top: 0;
+						left: 0;
+						backface-visibility: hidden;
+						font-weight: lighter;
+						font-size: 1vw;
+						font-family: Comme;
+						text-overflow: ellipsis;
+						border: 0vh solid black;
+						word-wrap: break;
+						overflow: hidden;
+						border-radius: 1vw;
+						transition: all 0.7s ease 0.2s;
+						
+		}
+		.back{ 
+		        transform: rotateY(180deg);
+			    color: black;
+				box-shadow: 0 0 0vw black;
+			}
+		.back-1{ 
+		        transform: rotateY(180deg);
+			    color: black;
+				box-shadow: 0 0 0vw black;
+			}		
+		
+		img{
+		      max-height: 100%;
+			  max-width: 100%;
+			}
+		
+		.circleimage{
+            height: 50%;
+            width: 50%;
+            border: 0 solid black;
+			border-radius: 50% 50%;
+			margin:auto;
+			background-image: url("quote1.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			}											
+		.circleimage2{
+            height: 50%;
+            width: 50%;
+            border: 0 solid black;
+			-webkit-border-radius: 50% 50%;
+			margin:auto;
+			background-image: url("Cool Program Quotes Wallpaper HD 9576 Wallpaper  High Resolution ....png");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			}	
+		.circleimage3{
+            height: 50%;
+            width: 50%;
+            border: 0 solid black;
+			-webkit-border-radius: 50% 50%;
+			margin:auto;
+			background-image: url("Steve.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			transition: background-image 3s ease; 
+			}
+	     .circleimage3:after{
+		                       transform: translateX(2vw);
+							   }
+			                  
+        @keyframes il{
+		                from{
+						        transform: translateX(0vw);
+							}
+						to{
+						      transform: translateX(2vw);
+						}
+					}
+		.facebook-lg{
+		               position: relative;
+					   right: 3vw;
+					   top: 0vh;
+					   color: white;
+					   font-size: 10vh;
+					   font-family: facebook; 
+
+					}
+		@font-face{
+		            font-family: facebook;
+					src: url("Klavika Bold Bold OSF.otf");
+				}
+		img{
+		            max-height: 100%;
+                    max-width: 100%;
+            }
+        .github{
+                    position: absolute;
+					top: 17vh;
+					left: 1.8vw;
+					color: white;
+					font-size: 5vw;
+					
+                 }					
+					   
+        .linkedin{
+		            position: absolute;
+					top: 60vh;
+					left: 1.8vw;
+					color:white;
+					font-size: 9vw;
+			      }	
+        .backarrow-1 ,.backarrow-2{
+                     position: absolute;
+                     right: 2.8vw;
+                     top: 60vh;
+                     color: white;
+                     font-size: 10vw;
+	                 cursor: pointer;
+					 transform: rotateZ(90deg);
+                   }
+        .backarrow-3, .backarrow-4{
+		            position: absolute;
+					top: 60vh;
+					right: 1.8vw;
+					color:white;
+					font-size: 10vw;
+					cursor: pointer;
+					transform: rotateZ(90deg);
+		}
+		.git-hub{
+                    position: absolute;
+					top: 6vh;
+					left: 8vw;
+					color: #202020;
+				    font-size: 2vw;
+					opacity:0.5;
+					
+					
+				}
+		.gmail{
+				    position: absolute;
+					top: 7vh;
+					left: 3.25vw;
+					color: #ff484c;
+					opacity: 0.5;
+				    font-size: 2vw;
+					border: 0 solid black;
+					height: 7vh;
+					width: 7vh;
+					border-radius: 50% 50%;
+					
+				}
+		.face-book{
+		            position: absolute;
+					top: 7.5vw;
+					left: 3.2vw;
+					color: #667fff;
+					opacity: 0.5;
+					font-size: 2vw;
+					
+				}
+		.linked-in{
+		            position: absolute;
+					top: 7.5vw;
+					left: 8vw;
+					color: #92fbff;
+					opacity: 0.5;
+					font-size: 2vw;	
+                    					
+					
+				  } 
+        .gmail:hover{
+                      opacity: 1;
+					  color: #ff0107;
+					  
+					}
+		.face-book:hover{
+                      opacity: 1;
+					  color: #2d59ff;
+					  
+					}
+		.git-hub:hover{
+                      opacity: 1;
+					  
+					  color: #000000;
+					}
+		.linked-in:hover{ 
+		                   opacity: 1;
+						   color: #03d8ff;
+						   
+						   }
+		@keyframes scroll-1{
+                              from{ transform: translateY(0vh); }
+                              to{  transform: translateY(-100vh); }
+                            }
+        @keyframes scroll-2{
+                              from{ top: 100vh; }
+                              to{ top: 0vh; }
+                            }
+		@keyframes scroll-3{
+                              from{ transform: translateY(-100vh); }
+                              to{  transform: translateY(0vh); }
+                            }
+		@keyframes scroll-4{
+                              from{ top: 0vh; }
+                              to{  top: 100vh; }
+                            }
+        .ipadbutton{
+                      height: 5vh;
+                      width: 5vh;
+                      border-radius: 50%;
+                      position: relative;
+					  top: 40vh;
+                      left: 60.5vw;
+                      border: 0vh solid black;
+                      background-color: #525252;
+                      z-index: 2;
+					  box-shadow: 0 0 1vh gray;
+					}
