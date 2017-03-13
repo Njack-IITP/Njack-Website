@@ -42,7 +42,11 @@ width:200px;
 height:200px;
 padding:0px 0px;
 margin:0px auto;
-background:pink;
+background: yellow; /* For browsers that do not support gradients */
+background: -webkit-radial-gradient(yellow, orange, red); /* Safari 5.1 to 6.0 */
+background: -o-radial-gradient(yellow, orange, red); /* For Opera 11.6 to 12.0 */
+background: -moz-radial-gradient(yellow, orange, red); /* For Firefox 3.6 to 15 */
+background: radial-gradient(yellow, orange, red); /* Standard syntax */
 color:black;
 border-radius:100px;
 border radius: 50%;
@@ -52,7 +56,8 @@ vertical-align: middle;
 transition:0.75s;
 transition-timing-function:cubic-bezier(.4,.44,.9,.45);
 font-size:28px;
-
+font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+font-weight:bold;
 }
 
 #LinuxCircle{
@@ -76,9 +81,23 @@ left:81%;
 }
 
 .circle:hover{
-background:red;
-color:yellow;
+background: black; /* For browsers that do not support gradients */
+background: -webkit-radial-gradient(black,orange); /* Safari 5.1 to 6.0 */
+background: -o-radial-gradient(black,orange); /* For Opera 11.6 to 12.0 */
+background: -moz-radial-gradient(black,orange); /* For Firefox 3.6 to 15 */
+background: radial-gradient(#00ff00,#00b300,#003300); /* Standard syntax */
+color:white;
 transform:rotateZ(360deg);
+}
+
+#initial{
+position:absolute;
+top:43%;
+left:16%;
+color:white;
+font-size:90px;
+text-align:center;
+font-family:algerian;	
 }
 
 #content-linux{
@@ -89,6 +108,7 @@ color:white;
 text-align:center;
 font-size:21px;
 display:none;
+font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 #content-android{
@@ -99,6 +119,7 @@ color:white;
 text-align:center;
 font-size:21px;
 display:none;
+font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 #content-webdev{
@@ -109,6 +130,7 @@ color:white;
 text-align:center;
 font-size:21px;
 display:none;
+font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 #content-comp{
@@ -119,6 +141,7 @@ color:white;
 text-align:center;
 font-size:21px;
 display:none;
+font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 #tabs{
@@ -144,16 +167,17 @@ display:none;
 
 #A_text{
 	/*background-color:rgba(0, 171, 43, 1);*/
-	background-image:url("android_text.jpg");
+	background-image:url("blue_haxagons_pattern-wallpaper-1920x1080.jpg");
 	background-size: cover;
     background-position: center;
 }
 
 #WD_text{
 	/*background-color:rgb(218, 148, 0);*/
-	background-image:url("webdevelopment_text.jpg");
+	background-image:url("webdev_text.jpg");
 	background-size: cover;
     background-position: center;
+	color:white;
 }
 
 #C_text{
@@ -166,8 +190,9 @@ display:none;
 
 #L_text{
 	/*background-color:#7c0294;*/
-	background-image:url("linux_text.jpg");
+	background-image:url("linux_text3.jpg");
 	background-repeat: repeat;
+	color:white;
 }
 
 #Android{

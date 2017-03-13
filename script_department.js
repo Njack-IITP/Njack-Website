@@ -55,40 +55,48 @@ $(document).ready(function(){
 	$(".description").css("margin-top",bottom+'px');
 	
 	$("#LinuxCircle").mouseover(function(){
-	$("#content-linux").fadeIn();
+	$("#initial").fadeOut();
+	$("#content-linux").delay(800).fadeIn();
 	});
 
 	$("#LinuxCircle").mouseout(function(){
 	$("#content-linux").fadeOut();
+	$("#initial").delay(800).fadeIn();
 	});
 
 
 
 	$("#WebdevCircle").mouseover(function(){
-	$("#content-webdev").fadeIn();
+	$("#initial").fadeOut();	
+	$("#content-webdev").delay(800).fadeIn();
 	});
 
 	$("#WebdevCircle").mouseout(function(){
 	$("#content-webdev").fadeOut();
+	$("#initial").delay(800).fadeIn();
 	});
 
 
 
 	$("#CompCircle").mouseover(function(){
-	$("#content-comp").fadeIn();
+	$("#initial").fadeOut();	
+	$("#content-comp").delay(800).fadeIn();
 	});
 
 	$("#CompCircle").mouseout(function(){
 	$("#content-comp").fadeOut();
+	$("#initial").delay(800).fadeIn();
 	});
 
 
 	$("#AndroidCircle").mouseover(function(){
-	$("#content-android").fadeIn();
+	$("#initial").fadeOut();
+	$("#content-android").delay(800).fadeIn();
 	});
 	
 	$("#AndroidCircle").mouseout(function(){
 	$("#content-android").fadeOut();
+	$("#initial").delay(800).fadeIn();
 	});
 	
 	var scrollVar= $(window).height() * 0.31;;
