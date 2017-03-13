@@ -5,7 +5,7 @@
   display:block;
   margin:0;
   padding-top:50px;
-  background-color:#DFE2DB;
+  /*background-color:#DFE2DB;*/
   height:100vh;    
 }
 
@@ -27,50 +27,52 @@ z-index: 5px;
 }
 
 #img{
-position:absolute;
-height:100px;
-width:100px;
-top:10.75%;
-left:32.25%;
+	position:absolute;
+	left:-20%;
+}
+
+.container-fluid img{
+	max-height:100%;
+	max-width:100%;
 }
 
 .circle{
 position:absolute;
-width:110px;
-height:110px;
+width:200px;
+height:200px;
 padding:0px 0px;
 margin:0px auto;
 background:pink;
 color:black;
-border-radius:55px;
+border-radius:100px;
 border radius: 50%;
 cursor:pointer;
 text-align:center;
 vertical-align: middle;
 transition:0.75s;
 transition-timing-function:cubic-bezier(.4,.44,.9,.45);
-font-size:16px;
+font-size:28px;
 
 }
 
 #LinuxCircle{
 top:9%;
-left:64%;
+left:81%;
 }
 
 #WebdevCircle{
 top:9%;
-left:27%;
+left:4%;
 }
 
 #CompCircle{
 top:69%;
-left:27%;
+left:4%;
 }
 
 #AndroidCircle{
 top:69%;
-left:64%;
+left:81%;
 }
 
 .circle:hover{
@@ -81,37 +83,41 @@ transform:rotateZ(360deg);
 
 #content-linux{
 position:absolute;
-top:20%;
+top:30%;
 left:46%;
 color:white;
 text-align:center;
+font-size:21px;
 display:none;
 }
 
 #content-android{
 position:absolute;
-top:20%;
+top:30%;
 left:39%;
 color:white;
 text-align:center;
+font-size:21px;
 display:none;
 }
 
 #content-webdev{
 position:absolute;
-top:20%;
+top:30%;
 left:41%;
 color:white;
 text-align:center;
+font-size:21px;
 display:none;
 }
 
 #content-comp{
 position:absolute;
-top:20%;
+top:30%;
 left:40%;
 color:white;
 text-align:center;
+font-size:21px;
 display:none;
 }
 
