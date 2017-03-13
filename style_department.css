@@ -129,7 +129,6 @@ display:none;
 
 .description{
 	background-color:black;
-	height:70vh;
 	color:black;
 	width:98.59vw;
 	padding:0px;
@@ -194,6 +193,60 @@ display:none;
 	font-size:400%;
 }
 
-.description > p{
-	padding:10px;	
+.projectID{
+	margin : 2vw 1.5vw 2vw 1.5vw;
+	font-size : 150%;
+	line-height:1.5em;
+	font-family : Raleway,sans-serif;
+	color:#000000;
+	font-weight:800;
+}
+
+.H4{
+	margin : 2vw 1.5vw 2vw 1.5vw;
+	font-family : 'Sansita',sans-serif;
+	color:#000000;
+	font-size:300%;
+}
+
+.H5{
+	text-align:center;
+	font-family: 'Slabo 27px', serif;
+	margin : 1.5vw 1.5vw 0.5vw 1.5vw;
+	font-size:200%;
+	cursor:pointer;
+}
+
+.projectDetails{
+	font-family : Raleway,sans-serif;
+	color:#000000;
+	font-weight:800;
+	font-size:125%;
+	margin-left:0.5em;
+	text-align:center;
+}
+
+.individualProjects{
+	display:inline-block;
+	width:27vw;
+	margin-left:2vw;
+	margin-right:2vw;
+	padding-right:1vw;
+	margin-bottom:1em;
+}
+
+.individualProjects > div{
+	height : 40vh;
+	
+	background-image : url("Android.jpg");
+	background-size: cover;
+    background-position: center;
+	border-radius:8px;	
+	box-shadow: 11px -3px 20px 1px #1E1D1D;	
+}
+
+.projectLink{
+	font-size:125%;
+	color:red;
+	margin-left:0.5em;
 }

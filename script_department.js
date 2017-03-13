@@ -6,6 +6,8 @@ $(document).ready(function(){
 		$(".tabs").css("display","block");
 		$(".tabs").css("margin","auto");
 		$(".tabs").css("marginBottom","5px");
+		$(".individualProjects").css("display","block");
+		$(".individualProjects").css("width","90vw");
 	}
 	
 	if($(window).width()<=1150)
@@ -21,18 +23,24 @@ $(document).ready(function(){
 			$(".tabs").css("display","block");
 			$(".tabs").css("margin","auto");
 			$(".tabs").css("marginBottom","5px");
+			$(".individualProjects").css("display","block");
+			$(".individualProjects").css("width","90vw");
 		}			
 		else if($(window).width()<=1150)
 		{
 			$(".tabs").css("width","23vw");
 			$(".tabs").css("display","inline-block");
 			$(".tabs").css("margin-right","0vw");
+			$(".individualProjects").css("display","inline-block");
+			$(".individualProjects").css("width","27vw");
 		}			
 		else
 		{
 			$(".tabs").css("width","23vw");
 			$(".tabs").css("margin-right","1vw");			
 			$(".tabs").css("display","inline-block");
+			$(".individualProjects").css("display","inline-block");		
+			$(".individualProjects").css("width","27vw");	
 		}
 	});
 	
