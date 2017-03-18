@@ -6,7 +6,9 @@
   margin:0;
   padding-top:50px;
   /*background-color:#DFE2DB;*/
-  height:100vh;    
+  height:100vh;
+  background-repeat: no-repeat;
+  background-size:100% 100%;  
 }
 
 .tabs{
@@ -38,8 +40,8 @@ z-index: 5px;
 
 .circle{
 position:absolute;
-width:200px;
-height:200px;
+width:15vw;
+height:15vw;
 padding:0px 0px;
 margin:0px auto;
 background: yellow; /* For browsers that do not support gradients */
@@ -48,14 +50,13 @@ background: -o-radial-gradient(yellow, orange, red); /* For Opera 11.6 to 12.0 *
 background: -moz-radial-gradient(yellow, orange, red); /* For Firefox 3.6 to 15 */
 background: radial-gradient(yellow, orange, red); /* Standard syntax */
 color:black;
-border-radius:100px;
-border radius: 50%;
+border-radius: 50%;
 cursor:pointer;
 text-align:center;
 vertical-align: middle;
 transition:0.75s;
 transition-timing-function:cubic-bezier(.4,.44,.9,.45);
-font-size:28px;
+font-size:2.1vw;
 font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 font-weight:bold;
 }
@@ -90,12 +91,16 @@ color:white;
 transform:rotateZ(360deg);
 }
 
+.heading{
+font-size:2.5vw;		
+} 
+
 #initial{
 position:absolute;
 top:43%;
 left:16%;
 color:white;
-font-size:90px;
+font-size:6.75vw;
 text-align:center;
 font-family:algerian;	
 }
@@ -103,10 +108,10 @@ font-family:algerian;
 #content-linux{
 position:absolute;
 top:30%;
-left:46%;
+left:44%;
 color:white;
 text-align:center;
-font-size:21px;
+font-size:1.575vw;
 display:none;
 font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
@@ -114,10 +119,10 @@ font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Tim
 #content-android{
 position:absolute;
 top:30%;
-left:39%;
+left:36%;
 color:white;
 text-align:center;
-font-size:21px;
+font-size:1.575vw;
 display:none;
 font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
@@ -125,10 +130,10 @@ font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Tim
 #content-webdev{
 position:absolute;
 top:30%;
-left:41%;
+left:37%;
 color:white;
 text-align:center;
-font-size:21px;
+font-size:1.575vw;
 display:none;
 font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
@@ -136,12 +141,44 @@ font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Tim
 #content-comp{
 position:absolute;
 top:30%;
-left:40%;
+left:36%;
 color:white;
 text-align:center;
-font-size:21px;
+font-size:1.575vw;
 display:none;
 font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+@media only screen and (max-width: 500px) {
+    .heading{
+        font-size: 5vw;
+    }
+	
+	#content-linux{
+		left:38%;
+		font-size:3.5vw;
+	}
+	
+	#content-android{
+		left:20%;
+		font-size:3.5vw;
+	}
+	
+	#content-webdev{
+		left:24%;
+		font-size:3.5vw;
+	}
+	
+	#content-comp{
+		left:22%;
+		font-size:3.5vw;
+	}
+	
+	.circle{
+		width:18.8vw;
+		height:18.8vw;
+		font-size:3vw;
+	}
 }
 
 #tabs{
@@ -168,7 +205,7 @@ font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Tim
 #A_text{
 	/*background-color:rgba(0, 171, 43, 1);*/
 	background-image:url("blue_haxagons_pattern-wallpaper-1920x1080.jpg");
-	background-size: cover;
+	background-size: 100% 100%;
     background-position: center;
 }
 
@@ -191,7 +228,8 @@ font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Tim
 #L_text{
 	/*background-color:#7c0294;*/
 	background-image:url("linux_text3.jpg");
-	background-repeat: repeat;
+	background-repeat: no-repeat;
+	background-size:100% 100%;
 	color:white;
 }
 
