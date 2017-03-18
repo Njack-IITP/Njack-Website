@@ -126,14 +126,14 @@ $(document).ready(function(){
 	        $("#A_text").fadeTo("slow",1.0);
 			
 			if(flag_atleastoneopen==false || $(window).width()<770)
-			$("html, body").animate({ scrollTop: $("#A_text").offset().top }, 900);
+			$("html, body").animate({ scrollTop: $("#A_text").offset().top}, 900);
 			
 			flag_android=true;
 			flag_atleastoneopen=true;
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#img").offset().top+scrollVar}, 1000, function(){
+			$("html, body").animate({ scrollTop: $("#LinuxCircle").offset().top+scrollVar}, 1000, function(){
 			$( "#A_text" ).fadeTo( 0 , 0.0,function(){$( "#A_text" ).fadeOut(0);});
 			flag_android=false;
 			flag_atleastoneopen=false;
@@ -173,7 +173,7 @@ $(document).ready(function(){
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#img").offset().top+scrollVar}, 900, function(){
+			$("html, body").animate({ scrollTop: $("#LinuxCircle").offset().top+scrollVar}, 900, function(){
 			$("#WD_text").fadeTo(0,0.0,function(){$( "#WD_text" ).fadeOut(0);});
 			flag_webdev=false;
 			flag_atleastoneopen=false;
@@ -213,7 +213,7 @@ $(document).ready(function(){
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#img").offset().top+scrollVar}, 900, function(){
+			$("html, body").animate({ scrollTop: $("#LinuxCircle").offset().top+scrollVar}, 900, function(){
 			$("#C_text").fadeTo(0,0.0,function(){$( "#C_text" ).fadeOut(0);});
 			flag_coding=false;
 			flag_atleastoneopen=false;
@@ -253,7 +253,7 @@ $(document).ready(function(){
 		}
 		else
 	    {
-			$("html, body").animate({ scrollTop: $("#img").offset().top+scrollVar}, 900, function(){
+			$("html, body").animate({ scrollTop: $("#LinuxCircle").offset().top+scrollVar}, 900, function(){
 			$("#L_text").fadeTo(0,0.0,function(){$( "#L_text" ).fadeOut(0);});
 			flag_linux=false;
 			flag_atleastoneopen=false;
