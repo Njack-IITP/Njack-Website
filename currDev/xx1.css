@@ -219,13 +219,13 @@ a
 .bord
 {
 
-    width: 41%;
+    width: 50%;
     height: 0.5%;
     background-color: #52CCFF;
     position: absolute;
     top: 235px;
     /* right: 9px; */
-    margin-left: 71px;
+    margin-left: 60px;
 
   background-color:#52CCFF;
 }
@@ -236,4 +236,6 @@ a
   height: 16.5% ;
   border-bottom-right-radius: 9% ;
   border-bottom-left-radius: 9% ;
+  position: relative; 
+  top:7px;
 }
