@@ -1,0 +1,30 @@
+WEB DEVELOPMENT
+
+The Web Development Club is a student led group with the aim of creating a community of students interested in learning web design & development. Our goal is to allow students to expand their knowledge and skills, as well as connect them with amazing opportunities.
+
+Year at a Glance:- 2016-2017
+Collaborated Projects :-
+Lost & Found
+Njack Website 
+Competitions:-
+IEEE Hackathon (October 2016)
+Hackathon (March 2017)
+
+Tutorials
+Getting started with web development is very easy. You can look up the following tutorials to get started:-
+www.codeacademy.com
+www.w3schools.com
+www.freecodecamp.com
+
+The journey from a newbie to a full stack web-developer is full of challenges. Here at the web development club we help ease the journey by working on collaborative projects and offering help in various aspects.
+
+Selection Procedure
+To be a part of the webdevelopment club as a member two simple tasks need to be completed, or you can provide a link to your website
+
+Whats Next?
+We plan on having a framework in place wherein we can develop websites for other clubs and departments in IIT Patna.
+To form a network of developers ready to work on new interesting web development projects
+To shift focus from simple web development to web application development
+To Participate at various Hackathons
+  
+
