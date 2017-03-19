@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+      <head>
+	        
+			<meta charset="UTP-8" lang="en">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale: 1">
+		<title>Njack IITP - Committee</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script><!-- jquey host-->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>		
+		
+
+		
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            
+		<!-- Font-Awesome Library -->				
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+        
+        $(document).ready(function(){
+           var flag_coord1 = false;
+           var flag_coord2 = false;
+           var flag_coord3 = false;
+           var one_open = false;
+
+
+           $('#Coord-1').click(function(){
+           
+           //If one of the coord details is being currently displayed
+           if(one_open == true){
+            if(flag_coord2 == true){
+           	  $('#coord-cont-3').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-3').animate({height:'36rem'},500,'swing');
+              $('#coord-cont-4').animate({height:'36rem'},500,'swing');
+              $('.Text-two p').animate({opacity : '1'},500,'swing',function(){ $('.Text-two p').css('display','none');
+              });
+              flag_coord2 = false;              	
+              });
+             }
+            else if(flag_coord3 == true){
+           	  $('#coord-cont-3').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-3').animate({height:'36rem'},500,'swing');
+              $('#coord-cont-4').animate({height:'36rem'},500,'swing');
+              $('.Text-three p').animate({opacity : '1'},500,'swing',function(){ $('.Text-three p').css('display','none');
+              });
+              flag_coord3 = false;              	
+              });
+            }
+            }
+           
+           //If the user just clicked the coord forthe first time
+           if(flag_coord1 == false){
+           	$('#coord-cont-1').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-1').animate({height:'60rem'},500,'swing');
+              $('#coord-cont-2').animate({height:'60rem'},500,'swing');
+              $('.Text-one p').css('display','inherit');
+              $('body').animate({scrollTop: '240rem'},500,'swing');
+              flag_coord1 = true;
+              one_open = true;
+          });
+             } 
+           	
+           	//If the user clicked the details again for normal stuff
+           	else{
+           	$('#coord-cont-1').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-1').animate({height:'36rem'},500,'swing');
+              $('#coord-cont-2').animate({height:'36rem'},500,'swing'); 
+              $('.Text-one p').animate({opacity : '1'},500,'swing',function(){ $('.Text-one p').css('display','none');
+              });
+              flag_coord1 = false; 
+              one_open = false;
+          });           		
+           	}
+		
+        });
+
+           $('#Coord-2').click(function(){
+           
+           //If one of the coord details is being currently displayed
+           if(one_open == true){
+            if(flag_coord1 == true){
+           	  $('#coord-cont-2').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-2').animate({height:'36rem'},500,'swing');
+              $('#coord-cont-1').animate({height:'36rem'},500,'swing');
+              $('.Text-one p').animate({opacity : '1'},500,'swing',function(){ $('.Text-one p').css('display','none');
+              });
+              flag_coord1 = false;              	
+              });
+             }
+            else if(flag_coord3 == true){
+           	  $('#coord-cont-3').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-3').animate({height:'36rem'},500,'swing');
+              $('#coord-cont-4').animate({height:'36rem'},500,'swing');
+              $('.Text-three p').animate({opacity : '1'},500,'swing',function(){ $('.Text-three p').css('display','none');
+              });
+              flag_coord3 = false;              	
+              });
+            }
+            }
+           
+           //If the user just clicked the coord forthe first time
+           if(flag_coord2 == false){
+           	$('#coord-cont-3').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-3').animate({height:'60rem'},500,'swing');
+              $('#coord-cont-4').animate({height:'60rem'},500,'swing');
+              $('.Text-two p').css('display','inherit');
+              flag_coord2 = true;
+              one_open = true;
+          });
+             } 
+           	
+           	//If the user clicked the details again for normal stuff
+           	else{
+           	$('#coord-cont-3').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-3').animate({height:'36rem'},500,'swing');
+              $('#coord-cont-4').animate({height:'36rem'},500,'swing'); 
+              $('.Text-two p').animate({opacity : '1'},500,'swing',function(){ $('.Text-two p').css('display','none');
+              });
+              flag_coord2 = false; 
+              one_open = false;
+          });           		
+           	}
+		
+        });
+           $('#Coord-3').click(function(){
+           
+           //If one of the coord details is being currently displayed
+           if(one_open == true){
+            if(flag_coord1 == true){
+           	  $('#coord-cont-2').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-2').animate({height:'36rem'},500,'swing');
+              $('#coord-cont-1').animate({height:'36rem'},500,'swing');
+              $('.Text-one p').animate({opacity : '1'},500,'swing',function(){ $('.Text-one p').css('display','none');
+              });
+              flag_coord1 = false;              	
+              });
+             }
+            else if(flag_coord2 == true){
+           	  $('#coord-cont-3').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-3').animate({height:'36rem'},500,'swing');
+              $('#coord-cont-4').animate({height:'36rem'},500,'swing');
+              $('.Text-two p').animate({opacity : '1'},500,'swing',function(){ $('.Text-two p').css('display','none');
+              });
+              flag_coord2 = false;              	
+              });
+            }
+            }
+           
+           //If the user just clicked the coord forthe first time
+           if(flag_coord3 == false){
+           	$('#coord-cont-3').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-3').animate({height:'60rem'},500,'swing');
+              $('#coord-cont-4').animate({height:'60rem'},500,'swing');
+              $('.Text-three p').css('display','inherit');
+              flag_coord3 = true;
+              one_open = true;
+          });
+             } 
+           	
+           	//If the user clicked the details again for normal stuff
+           	else{
+           	$('#coord-cont-3').animate({ opacity: '1'},100,'swing',function(){
+           	  $('#coord-cont-3').animate({height:'36rem'},500,'swing');
+              $('#coord-cont-4').animate({height:'36rem'},500,'swing');
+              $('.Text-three p').animate({opacity : '1'},500,'swing',function(){ $('.Text-three p').css('display','none');
+              });
+              flag_coord3 = false; 
+              one_open = false;
+          });           		
+           	}
+		
+        });
+});  
+            
+	    </script>	
+		<style>
+
+		
+			   
+		</style>
+	    
+	    <link rel="stylesheet" type="text/css" href="style-committe-2.css"/>
+	</head>
+	
+	<body>
+	      <!-- Page for Coordinators -->
+		  <div id="body-1">
+		       
+			   <h3> Members of the club </h3>
+
+               <!-- Title of the page-->
+			   <h1> Coordinators </h1>
+			   
+			   <!-- Zeroth Coordinator -->
+			     <div id = "coord-cont-1" class="Coord">            
+			               
+                                 <div id="Coord-0"><p>Click on their photo to see more details about them</p></div>
+                                 <div class="Coord-text">
+                                   <p> Click on their image, <br> to see more details about them<br> </p>
+                                   <div class="fb1"> <i class="fa fa-facebook-square fb" id="fb1" aria-hidden="true"></i> </div>
+                                   <div class="git1"><i class="fa fa-github git" aria-hidden="true"></i></div>
+                                   <div class="g11"><i class="fa fa-google-plus-square g1" aria-hidden="true"></i></div>
+                                   <div class="lin1"><i class="fa fa-linkedin-square lin" aria-hidden="true"></i></div> 
+                                 </div>
+                             
+                 </div>
+			   <!-- First Coordinator -->
+			     <div id="coord-cont-2" class="Coord">           
+			                 
+							    <div id="Coord-1"></div>    
+								 <div class="Coord-text">
+								   <p> Pranjali Kokare, <br>Web and App Developer </p>
+                                 </div>
+						         <div class="Text-one">  
+						           <p> Pranjali Kokare is a junior pursuing <br>Computer Science and Engineering<br> at IIT Patna. She has previously interned <br>at Google and handles the<br> Web Development department for NJACK. <br> Here social media profiles are: </p>
+                                  <div class="fb1"> <a href="https://www.facebook.com/profile.php?id=100004324127209&fref=ts"><i class="fa fa-facebook-square fb" id="fb1" aria-hidden="true"></i> </div></a>
+                                   <div class="git1"><a href="https://github.com/KokareIITP"><i class="fa fa-github git" aria-hidden="true"></i></div></a>
+                                   <div class="g11"><a href="https://plus.google.com/u/0/103535880725664842364"><i class="fa fa-google-plus-square g1" aria-hidden="true"></i></div></a>
+                                   <div class="lin1"><a href="https://www.linkedin.com/in/pranjali-k-0b896aa6/"><i class="fa fa-linkedin-square lin" aria-hidden="true"></i></div></a> 
+			                     </div>
+			     </div>
+				
+			   <!-- Second Coordinator -->
+				 <div id = "coord-cont-3" class="Coord">		     
+						    
+							     <div id="Coord-2"></div>
+								  <div class="Coord-text">
+								   <p> Gagan Kumar, <br> Android </p>
+								 </div>
+						         <div class="Text-two">  
+						           <p>  Gagan Kumar is a junior pursuing <br>Computer Science and Engineering<br> at IIT Patna. He has previously interned <br>at Google and handles the<br> Android department for NJACK. <br> His social media profiles are: </p>
+                                  <div class="fb1"> <a href="https://www.facebook.com/scopeInfinity?fref=ts&ref=br_tf&qsefr=1"><i class="fa fa-facebook-square fb" id="fb1" aria-hidden="true"></i> </div></a>
+                                   <div class="git1"><a href="https://github.com/scopeInfinity"><i class="fa fa-github git" aria-hidden="true"></i></div></a>
+                                   <div class="g11"><a href=""><i class="fa fa-google-plus-square g1" aria-hidden="true"></i></div></a>
+                                   <div class="lin1"><a href=""><i class="fa fa-linkedin-square lin" aria-hidden="true"></i></div></a> 							
+      							</div>
+				</div> 		 
+			   
+			   <!-- Third Coordinator -->
+			     <div id = "coord-cont-4" class="Coord">	 		     
+						    
+							     <div id="Coord-3"></div>
+								  <div class="Coord-text">
+								   <p> Abhishek Jaiswal, <br>Linux and Coding </p>
+								 </div>
+						         <div class="Text-three">  
+						           <p> Abhishek Jaiswal is a junior pursuing <br>Computer Science and Engineering<br> at IIT Patna. He has previously interned <br>at Google and handles the<br>  Linux and Coding Department for NJACK. <br> His social media profiles are: </p>
+                                  <div class="fb1"> <a href="https://www.facebook.com/abhishek.jaiswal.9400984?fref=ts"><i class="fa fa-facebook-square fb" id="fb1" aria-hidden="true"></i> </div></a>
+                                   <div class="git1"><a href="https://github.com/BlazingFire"><i class="fa fa-github git" aria-hidden="true"></i></div></a>
+                                   <div class="g11"><a href=""><i class="fa fa-google-plus-square g1" aria-hidden="true"></i></div></a>
+                                   <div class="lin1"><a href="https://www.linkedin.com/in/curious4life/"><i class="fa fa-linkedin-square lin" aria-hidden="true"></i></div></a> 							
+							</div>
+				 </div>		 
+				<!-- Background-image covering the entire screen -->		 
+				<div id="background-1"></div>
+        
+
+                <!-- Sub-Coordinators -->
+                <h1> <br><br>Sub Coordinators </h1>    			
+                  <div id = "coord-cont-5" class="Coord">	 		     
+						    
+							     <div id="SubC-1"></div>
+								  <div class="Coord-text">
+								   <p> Jai Tatia </p>
+                                  <div class="fb1"> <a href=""><i class="fa fa-facebook-square fb" id="fb1" aria-hidden="true"></i> </div></a>
+                                   <div class="git1"><a href=""><i class="fa fa-github git" aria-hidden="true"></i></div></a>
+                                   <div class="g11"><a href=""><i class="fa fa-google-plus-square g1" aria-hidden="true"></i></div></a>
+                                   <div class="lin1"><a href=""><i class="fa fa-linkedin-square lin" aria-hidden="true"></i></div></a> 							 
+								 </div>	
+				   </div>
+				  				     
+                  <div id = "coord-cont-6" class="Coord">	 		     
+						    
+							     <div id="SubC-2"></div>
+								  <div class="Coord-text">
+								   <p> Sudha Chauhan </p>
+                                  <div class="fb1"> <a href="https://www.facebook.com/dhasuiit"><i class="fa fa-facebook-square fb" id="fb1" aria-hidden="true"></i> </div></a>
+                                   <div class="git1"><a href="https://github.com/sudhachauhan"><i class="fa fa-github git" aria-hidden="true"></i></div></a>
+                                   <div class="g11"><a href="https://goo.gl/7owWK9"><i class="fa fa-google-plus-square g1" aria-hidden="true"></i></div></a>
+                                   <div class="lin1"><a href="https://www.linkedin.com/in/sudha-jb708502/"><i class="fa fa-linkedin-square lin" aria-hidden="true"></i></div></a> 							 
+								 </div>	 	    
+                   </div>
+                  <div id = "coord-cont-7" class="Coord">	 		     
+						    
+							     <div id="SubC-3"></div>
+								  <div class="Coord-text">
+								   <p> Prateek Karnal </p>
+                                  <div class="fb1"> <a href="https://www.facebook.com/Equilix"><i class="fa fa-facebook-square fb" id="fb1" aria-hidden="true"></i> </div></a>
+                                   <div class="git1"><a href="https://github.com/Equlnox"><i class="fa fa-github git" aria-hidden="true"></i></div></a>
+                                   <div class="g11"><a href="https://plus.google.com/101388749212679052049"><i class="fa fa-google-plus-square g1" aria-hidden="true"></i></div></a>
+                                   <div class="lin1"><a href="https://www.linkedin.com/in/prateek-karnal-7761a8108/"><i class="fa fa-linkedin-square lin" aria-hidden="true"></i></div></a> 							 
+								 </div>	 	    
+                   </div>
+                  <div id = "coord-cont-8" class="Coord">	 		     
+						    
+							     <div id="SubC-4"></div>
+								  <div class="Coord-text">
+								   <p> Ashish Raj </p>
+                                  <div class="fb1"> <a href=""><i class="fa fa-facebook-square fb" id="fb1" aria-hidden="true"></i> </div></a>
+                                   <div class="git1"><a href=""><i class="fa fa-github git" aria-hidden="true"></i></div></a>
+                                   <div class="g11"><a href=""><i class="fa fa-google-plus-square g1" aria-hidden="true"></i></div></a>
+                                   <div class="lin1"><a href=""><i class="fa fa-linkedin-square lin" aria-hidden="true"></i></div></a> 							 
+								 </div>	 	    
+                   </div>
+                  <div id = "coord-cont-9" class="Coord">	 		     
+						    
+							     <div id="SubC-5"></div>
+								  <div class="Coord-text">
+								   <p> Abhishek Agarwal </p>
+                                  <div class="fb1"> <a href="https://m.facebook.com/Abhishek.dev2.0"><i class="fa fa-facebook-square fb" id="fb1" aria-hidden="true"></i> </div></a>
+                                   <div class="git1"><a href="https://github.com/Abhishek-dev2"><i class="fa fa-github git" aria-hidden="true"></i></div></a>
+                                   <div class="g11"><a href="https://plus.google.com/+AbhishekAgrawaliitp"><i class="fa fa-google-plus-square g1" aria-hidden="true"></i></div></a>
+                                   <div class="lin1"><a href="https://www.linkedin.com/in/abhishek-agrawal-6a7a69115"><i class="fa fa-linkedin-square lin" aria-hidden="true"></i></div></a> 
+								 </div>	 	    
+                   </div>
+                  <div id = "coord-cont-10" class="Coord">	 		     
+						    
+							     <div id="SubC-6"></div>
+								  <div class="Coord-text">
+								   <p> Chirag Wadhera </p>
+                                  <div class="fb1"> <a href="https://www.facebook.com/chirag.wadhera.9"><i class="fa fa-facebook-square fb" id="fb1" aria-hidden="true"></i> </div></a>
+                                   <div class="git1"><a href=""><i class="fa fa-github git" aria-hidden="true"></i></div></a>
+                                   <div class="g11"><a href="https://plus.google.com/+ChiragWadhera15"><i class="fa fa-google-plus-square g1" aria-hidden="true"></i></div></a>
+                                   <div class="lin1"><a href="https://www.linkedin.com/in/chirag-wadhera-155b22106/"><i class="fa fa-linkedin-square lin" aria-hidden="true"></i></div></a> 							 
+								 </div>	 	    
+                   </div>
+                  <div id = "coord-cont-11" class="Coord">	 		     
+						    
+							     <div id="SubC-7"></div>
+								  <div class="Coord-text">
+								   <p> Vaibhav Sisodiya </p>
+                                  <div class="fb1"> <a href=""><i class="fa fa-facebook-square fb" id="fb1" aria-hidden="true"></i> </div></a>
+                                   <div class="git1"><a href=""><i class="fa fa-github git" aria-hidden="true"></i></div></a>
+                                   <div class="g11"><a href=""><i class="fa fa-google-plus-square g1" aria-hidden="true"></i></div></a>
+                                   <div class="lin1"><a href=""><i class="fa fa-linkedin-square lin" aria-hidden="true"></i></div></a> 
+								 </div>	 	    
+                   </div>
+                                                        
+	   
+	    
+
+
+
+
+	    </div>
+	</body>
+	
